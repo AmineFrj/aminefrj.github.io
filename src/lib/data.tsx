@@ -1,4 +1,4 @@
-import { Github, Linkedin, Figma } from 'lucide-react';
+import { Github, Linkedin, GraduationCap } from 'lucide-react';
 
 import LogoTF from '/public/images/logos/logo-tf.svg';
 import LogoSK from '/public/images/logos/icon-sk.png';
@@ -11,6 +11,7 @@ import LogoPostgreSQL from '/public/images/logos/icon-postgresql.svg';
 import LogoMongoDB from '/public/images/logos/icon-mongodb.svg';
 import LogoFigma from '/public/images/logos/icon-figma.svg';
 import LogoGit from '/public/images/logos/icon-git.svg';
+import LogoDjango from '/public/images/logos/icon-django.svg';
 
 import LogoSogeti from '/public/images/logos/logo-sogeti.png';
 import LogoOrange from '/public/images/logos/logo-orange.png';
@@ -26,6 +27,8 @@ import ConfEgc23 from '/public/images/conf-egc23.png';
 import ConfEgc24 from '/public/images/conf-egc24.png';
 import ConfIpol from '/public/images/conf-ipol.png';
 import ConfAIDSCY from '/public/images/conf-aidscy.png';
+import ConfWsdm24 from '/public/images/conf-wsdm.png';
+
 
 import {
   ExperienceDetails,
@@ -64,12 +67,16 @@ export const NAV_LINKS = [
 
 export const SOCIAL_LINKS = [
   {
-    icon: Github,
-    url: 'https://github.com/aminefrj',
-  },
-  {
     icon: Linkedin,
     url: 'https://fr.linkedin.com/in/aminefrj',
+  },
+  {
+    icon: GraduationCap,
+    url: 'https://scholar.google.com/citations?user=LPkLWiAAAAAJ&hl=en&oi=ao',
+  },
+  {
+    icon: Github,
+    url: 'https://github.com/aminefrj',
   },
   // {
   //   icon: Figma,
@@ -86,7 +93,7 @@ export const TECHNOLOGIES: TechDetails[] = [
     url: 'https://www.tensorflow.org/',
   },
   // {
-  //   label: 'Scikit-Learn',
+  //   label: 'Pytorch',
   //   logo: '',
   //   url: '',
   // },
@@ -121,10 +128,15 @@ export const TECHNOLOGIES: TechDetails[] = [
     url: 'https://www.docker.com/',
   },
   {
-    label: 'FastAPI',
-    logo: '',
-    url: 'https://fastapi.tiangolo.com/',
+    label: 'Django',
+    logo: LogoDjango,
+    url: 'https://www.djangoproject.com/',
   },
+  // {
+  //   label: 'FastAPI',
+  //   logo: '',
+  //   url: 'https://fastapi.tiangolo.com/',
+  // },
   // {
   //   label: 'React',
   //   logo: '',
@@ -200,9 +212,20 @@ export const EXPERIENCES: ExperienceDetails[] = [
 
 export const PROJECTS: ProjectDetails[] = [
   {
+    name: 'WordGraph: a python package for reconstructing interactive causal graphical models from text data',
+    description:
+      'A Ferdjaoui, S Affeldt, M Nadif',
+    url: 'https://dl.acm.org/doi/10.1145/3616855.3635698',
+    previewImage: PaperWSDM,
+    technologies: [
+      'WSDM 2024',
+      'Merida, Mexico',
+    ],
+  },
+  {
     name: 'Modèles graphiques causaux interactifs pour les données textuelles',
     description:
-    'A. Ferdjaoui, A. Tlati, S. Affeldt, M. Nadif',
+    'A. Ferdjaoui, S. Affeldt, M. Nadif',
       // 'Nous proposons de reconstruire des modèles graphiques causaux à partir de données textuelles via un nouveau package Python appelé WordGraph. Ce package facilite l\'exploration de grands corpus de documents par des visualisations interactives sous forme de modèles graphiques de mots. Le pipeline WordGraph exploite à la fois les widgets jupyter et le notebook jupyter pour aider les utilisateurs sans expérience en Python à prendre rapidement en main le pipeline WordGraph, qui est entièrement personnalisable. WordGraph est disponible via un dépôt GitHub, qui fournit également une courte vidéo présentant l\'utilisation de notre système.',
     url: 'https://editions-rnti.fr/?inprocid=1002965',
     previewImage: PaperWG,
@@ -214,7 +237,7 @@ export const PROJECTS: ProjectDetails[] = [
   {
     name: 'CORPEX : Analyse exploratoire d\'un corpus biomédical à l\'aide de la classification croisée',
     description:
-    'A. Ferdjaoui, S. Affeldt, M. Nadif',
+    'A. Ferdjaoui, A. Tlati, S. Affeldt, M. Nadif',
       // 'Nous proposons une interface d\'aide à l\'analyse de corpus via la visualisation interactive de coclusters afin d\'accompagner l\'exploration des thématiques pour un ensemble de textes. Les saisies de l\'utilisateur permettent la création ou le chargement d\'un corpus de documents, son nettoyage et l\'étude interactive et simultanée des termes et des documents. Cet article détaille les fonctionnalités en lien avec la génération dynamique de corpus, notamment dans un cadre biomédical, et également le chargement de matrices documents-termes pour des corpus déjà prétraités. L\'analyse du corpus par la classification croisée (co-clustering) et la visualisation conjointe des termes et des documents, suivant le co-partitionnement obtenu sur les deux ensembles, sont des outils efficaces pour une compréhension rapide des sujets abordés dans un corpus. La sauvegarde automatique des résultats permet de relancer facilement différentes analyses par un co-clustering approprié et d\'obtenir des vues croisées des thématiques à différents niveaux de granularité.',
     url: 'https://editions-rnti.fr/?inprocid=1002867',
     previewImage: PaperCorpex,
@@ -222,31 +245,34 @@ export const PROJECTS: ProjectDetails[] = [
       'EGC 2023',
       'Lyon, France'
     ],
-  },
-  {
-    name: 'WordGraph: a python package for reconstructing interactive causal graphical models from text data',
-    description:
-      'A Ferdjaoui, S Affeldt, M Nadif',
-    url: '',
-    previewImage: PaperWSDM,
-    technologies: [
-      'WSDM 2024',
-      'Merida, Mexico',
-    ],
-  },
+  }
 ];
 
 export const TESTIMONIALS: TestimonialDetails[] = [
   {
-    personName: 'EGC 2023',
-    personAvatar: ConfEgc23,
-    title: 'Talk',
+    personName: 'WSDM 2024',
+    personAvatar: ConfWsdm24,
+    title: 'Demonstration',
     testimonial:
       'Presentation and demonstration of CORPEX',
   },
   {
     personName: 'EGC 2024',
     personAvatar: ConfEgc24,
+    title: 'Talk & demonstration',
+    testimonial:
+      'Presentation and demonstration of Wordgraph.',
+  },
+  {
+    personName: 'EGC 2023',
+    personAvatar: ConfEgc23,
+    title: 'Talk & demonstration',
+    testimonial:
+      'Presentation and demonstration of CORPEX',
+  },
+  {
+    personName: 'AI-DSCY 2023',
+    personAvatar: ConfAIDSCY,
     title: 'Talk',
     testimonial:
       'Presentation and demonstration of Wordgraph.',
@@ -257,13 +283,7 @@ export const TESTIMONIALS: TestimonialDetails[] = [
     title: 'Talk',
     testimonial:
       'Presentation and demonstration of the article CAEclust: A Consensus of Autoencoders Representations for Clustering” (2022). In: Paris, France: Image Processing On Line, pp. 590–603.',
-  },
-  {
-    personName: 'AI-DSCY',
-    personAvatar: ConfAIDSCY,
-    title: 'Talk',
-    testimonial:
-      'Presentation and demonstration of Wordgraph.',
-  },
+  }, 
+
   
 ];

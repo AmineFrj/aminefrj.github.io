@@ -37,13 +37,14 @@ const Header = () => {
     }
   }, [size, isOpen]);
 
-  return (
+  return (    
     <header
       className={mergeClasses(
         'sticky top-0 z-30 w-full border-b border-transparent bg-gray max-md:border-gray-100',
         scrolled ? 'bg-gray/50 backdrop-blur-xl md:border-gray-100' : ''
       )}
     >
+      <meta name="google-site-verification: google1f030c20340a6923.html"></meta>
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between p-4 md:px-8">
         <Link href="/" noCustomization>
           <Logo />
