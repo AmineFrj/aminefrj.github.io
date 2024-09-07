@@ -92,30 +92,25 @@ export const TECHNOLOGIES: TechDetails[] = [
     // darkModeLogo: LogoExpressLight,
     url: 'https://www.tensorflow.org/',
   },
-  // {
-  //   label: 'Pytorch',
-  //   logo: '',
-  //   url: '',
-  // },
   {
-    label: 'Flask',
-    logo: LogoFlask,
-    url: 'https://flask.palletsprojects.com/en/3.0.x/',
+    label: 'Django',
+    logo: LogoDjango,
+    url: 'https://www.djangoproject.com/',
   },
   {
-    label: 'Elastic',
-    logo: LogoElastic,
-    url: 'https://www.elastic.co/',
+    label: 'FastAPI',
+    logo: LogoFastAPI,
+    url: 'https://fastapi.tiangolo.com/',
+  },
+  {
+    label: 'React',
+    logo: LogoReact,
+    url: 'https://react.dev/',
   },
   {
     label: 'PostgreSQL',
     logo: LogoPostgreSQL,
     url: 'https://www.postgresql.org/',
-  },
-  {
-    label: 'Figma',
-    logo: LogoFigma,
-    url: 'https://www.figma.com/',
   },
   {
     label: 'Git',
@@ -127,21 +122,28 @@ export const TECHNOLOGIES: TechDetails[] = [
     logo: LogoDocker,
     url: 'https://www.docker.com/',
   },
+  // {
+  //   label: 'Pytorch',
+  //   logo: '',
+  //   url: '',
+  // },
+  // {
+  //   label: 'Flask',
+  //   logo: LogoFlask,
+  //   url: 'https://flask.palletsprojects.com/en/3.0.x/',
+  // },
   {
-    label: 'Django',
-    logo: LogoDjango,
-    url: 'https://www.djangoproject.com/',
+    label: 'Elastic',
+    logo: LogoElastic,
+    url: 'https://www.elastic.co/',
   },
-  // {
-  //   label: 'FastAPI',
-  //   logo: '',
-  //   url: 'https://fastapi.tiangolo.com/',
-  // },
-  // {
-  //   label: 'React',
-  //   logo: '',
-  //   url: 'https://react.dev/',
-  // },
+
+  {
+    label: 'Figma',
+    logo: LogoFigma,
+    url: 'https://www.figma.com/',
+  },
+
 ];
 
 export const EXPERIENCES: ExperienceDetails[] = [
@@ -162,8 +164,8 @@ export const EXPERIENCES: ExperienceDetails[] = [
     // darkModeLogo: LogoGreenApexLight,
     logoAlt: 'Orange logo',
     position: 'Data Scientist, Orange - Enovacom',
-    startDate: new Date(2021, 9),
-    endDate: new Date(2021, 3),
+    startDate: new Date(2021, 3),
+    endDate: new Date(2021, 9),
     summary: [
       'Development of a search and visualization platform for unstructured data in a healthcare data warehouse.',
       'Collection, pre-processing and classification of n2c2 healthcare data.'
@@ -174,8 +176,8 @@ export const EXPERIENCES: ExperienceDetails[] = [
     // darkModeLogo: LogoGreenApexLight,
     logoAlt: 'Orange logo',
     position: 'Data Scientist - Full Stack developer, Numendo',
-    startDate: new Date(2020, 12),
-    endDate: new Date(2020, 9),
+    startDate: new Date(2020, 9),
+    endDate: new Date(2020, 12),
     summary: [
       'Maintenance and retraining of text classification models.',
       'Development of an rtsp video streaming platform (React and Flask).'
@@ -186,8 +188,8 @@ export const EXPERIENCES: ExperienceDetails[] = [
     // darkModeLogo: LogoGreenApexLight,
     logoAlt: 'Orange logo',
     position: 'Data Scientist - Full Stack developer, Orange',
-    startDate: new Date(2020, 9),
-    endDate: new Date(2019, 8),
+    startDate: new Date(2019, 8),
+    endDate: new Date(2020, 9),
     summary: [
       'Creation of incident ticket classification models for Orange Cloud for Business.',
       'Realization of a model and a platform (Front and Backend) for detecting the wearing of masks in real time.',
@@ -201,8 +203,8 @@ export const EXPERIENCES: ExperienceDetails[] = [
     logo: LogoSaynova,
     logoAlt: 'Saynova logo',
     position: 'Data Engineer',
-    startDate: new Date(2019, 5),
-    endDate: new Date(2019, 2),
+    startDate: new Date(2019, 2),
+    endDate: new Date(2019, 5),
     summary: [
       'Data analysis and visualization with Elasticsearch and Kibana.',
       'Log file collection and transformation with Logstash and Beats'
@@ -283,7 +285,5 @@ export const TESTIMONIALS: TestimonialDetails[] = [
     title: 'Talk',
     testimonial:
       'Presentation and demonstration of the article CAEclust: A Consensus of Autoencoders Representations for Clustering” (2022). In: Paris, France: Image Processing On Line, pp. 590–603.',
-  }, 
-
-  
+  }
 ];
