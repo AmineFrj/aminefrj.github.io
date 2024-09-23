@@ -38,7 +38,7 @@ const AboutMeSection = () => {
           </Typography> 
           <Typography>
           Passionate about machine learning, 
-          my academic career began with a master's degree in <b>machine learning</b>, 
+          my academic career began with a {`master's`} degree in <b>machine learning</b>, 
           supplemented by a second one in <b>MIAGE</b> for project managment, 
           and two years practical experience as a <b>data scientist</b> and <b>full stack developer</b>. 
           I decided to explore the depths of the field further by starting a PhD with SogetiLabs and the Borelli Center. 
@@ -47,7 +47,7 @@ const AboutMeSection = () => {
           <Typography>
           This exciting career journey has led to numerous <b>publications</b>, 
           both national and international, as well as the development of two NLP software applications. 
-          I also share my knowledge by <b>teaching</b> master's students at the Université Paris Cité. 
+          I also share my knowledge by <b>teaching</b> {`master's`} students at the Université Paris Cité. 
           Using the CIFRE (Convention Industrielle de Formation par la Recherche), 
           I actively bridge the gap between theoretical exploration and practical application, 
           contributing to real-life, <b>industrial</b> projects within SogetiLabs.
@@ -57,7 +57,7 @@ const AboutMeSection = () => {
           <div className="flex flex-col gap-2 md:flex-row md:gap-6">
             <ul className="flex list-inside list-disc flex-col gap-2">
               <Typography component="li">
-                Double master's degree : machine learning and project managment
+                Double {`master's`} degree : machine learning and project managment
               </Typography>
               <Typography component="li">Project leader</Typography>
             </ul>

@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { TestimonialDetails as TestimonialDetailsProps } from '@/lib/types';
 import Typography from '@/components/general/typography';
 import Card from '@/components/layout/card';
+import DefaultAvatar from '/public/images/Amine.jpeg';
 
 const TestimonialDetails = ({
   personName,
@@ -11,7 +12,12 @@ const TestimonialDetails = ({
 }: TestimonialDetailsProps) => {
   return (
     <Card className="flex-shrink-0 mx-4 flex flex-col items-center gap-6 p-8 max-w-sm md:max-w-md lg:max-w-lg">
-      <Image src={personAvatar} alt={`${personName} avatar`} width={100} height={100} />
+      <Image
+        src={personAvatar || DefaultAvatar} 
+        alt={`${personName} avatar`}
+        width={100}
+        height={100}
+      />
       <div className="flex w-full flex-col gap-1">
         <Typography
           variant="subtitle"
