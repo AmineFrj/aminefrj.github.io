@@ -152,7 +152,7 @@ export const EXPERIENCES: ExperienceDetails[] = [
   {
     logo: LogoSogeti,
     logoAlt: 'Sogeti logo',
-    position: 'Research projects leader - Capgemini',
+    position: 'PhD & Project Leader - Capgemini',
     startDate: new Date(2022, 7),
     currentlyWorkHere: true,
     summary: [
@@ -179,7 +179,7 @@ export const EXPERIENCES: ExperienceDetails[] = [
     logo: LogoNumendo,
     // darkModeLogo: LogoGreenApexLight,
     logoAlt: 'Orange logo',
-    position: 'Data Scientist - Full Stack developer, Numendo',
+    position: 'Data Scientist & Full Stack developer, Numendo',
     startDate: new Date(2020, 9),
     endDate: new Date(2020, 12),
     summary: [
@@ -191,7 +191,7 @@ export const EXPERIENCES: ExperienceDetails[] = [
     logo: LogoOrange,
     // darkModeLogo: LogoGreenApexLight,
     logoAlt: 'Orange logo',
-    position: 'Data Scientist - Full Stack developer, Orange',
+    position: 'Data Scientist & Full Stack developer, Orange',
     startDate: new Date(2019, 8),
     endDate: new Date(2020, 9),
     summary: [
@@ -206,7 +206,7 @@ export const EXPERIENCES: ExperienceDetails[] = [
   {
     logo: LogoSaynova,
     logoAlt: 'Saynova logo',
-    position: 'Data Engineer',
+    position: 'Data Engineer, Saynova',
     startDate: new Date(2019, 2),
     endDate: new Date(2019, 5),
     summary: [
