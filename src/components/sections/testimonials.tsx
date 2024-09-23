@@ -13,13 +13,13 @@ const TestimonialsSection = () => {
 
   const scrollLeft = () => {
     if (scrollRef.current) {
-      scrollRef.current.scrollBy({ left: -500, behavior: 'smooth' });
+      scrollRef.current.scrollBy({ left: -300, behavior: 'smooth' });
     }
   };
 
   const scrollRight = () => {
     if (scrollRef.current) {
-      scrollRef.current.scrollBy({ left: 500, behavior: 'smooth' });
+      scrollRef.current.scrollBy({ left: 300, behavior: 'smooth' });
     }
   };
 
@@ -34,7 +34,7 @@ const TestimonialsSection = () => {
       {/* Flèche gauche */}
       <button
         onClick={scrollLeft}
-        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-300 p-2 rounded-full shadow-lg"
+        className="absolute left-10 top-1/2 transform -translate-y-1/2 bg-gray-300 p-2 rounded-full shadow-lg"
         aria-label="Scroll Left"
       >
         <FaArrowLeft />
@@ -53,7 +53,7 @@ const TestimonialsSection = () => {
       {/* Flèche droite */}
       <button
         onClick={scrollRight}
-        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-300 p-2 rounded-full shadow-lg"
+        className="absolute right-10 top-1/2 transform -translate-y-1/2 bg-gray-300 p-2 rounded-full shadow-lg"
         aria-label="Scroll Right"
       >
         <FaArrowRight />

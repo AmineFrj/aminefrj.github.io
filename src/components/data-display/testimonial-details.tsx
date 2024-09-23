@@ -11,7 +11,7 @@ const TestimonialDetails = ({
   title,
 }: TestimonialDetailsProps) => {
   return (
-    <Card className="flex-shrink-0 mx-4 flex flex-col items-center gap-6 p-8 max-w-sm md:max-w-md lg:max-w-lg">
+    <Card className="flex-shrink-0 mx-4 flex flex-col items-center gap-6 p-8 max-w-xs md:max-w-sm">
       <Image
         src={personAvatar || DefaultAvatar} 
         alt={`${personName} avatar`}
@@ -37,3 +37,4 @@ const TestimonialDetails = ({
 };
 
 export default TestimonialDetails;
+

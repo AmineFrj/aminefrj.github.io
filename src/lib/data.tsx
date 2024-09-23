@@ -29,6 +29,7 @@ import ConfEgc24 from '/public/images/conf-egc24.png';
 import ConfIpol from '/public/images/conf-ipol.png';
 import ConfAIDSCY from '/public/images/conf-aidscy.png';
 import ConfWsdm24 from '/public/images/conf-wsdm.png';
+import ConfSFC24 from '/public/images/conf-sfc.png';
 
 
 import {
@@ -265,6 +266,13 @@ export const PROJECTS: ProjectDetails[] = [
 ];
 
 export const TESTIMONIALS: TestimonialDetails[] = [
+  {
+    personName: 'WSDM 2024',
+    personAvatar: ConfSFC24,
+    title: 'Presentation of article',
+    testimonial:
+      'Presentation of a new clustering algorithm applied on large textual data at International Mathematical Meeting Centre fot the meetings of French Classification Society. ',
+  },
   {
     personName: 'WSDM 2024',
     personAvatar: ConfWsdm24,
