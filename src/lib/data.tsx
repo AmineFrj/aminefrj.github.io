@@ -153,7 +153,7 @@ export const EXPERIENCES: ExperienceDetails[] = [
     logo: LogoSogeti,
     logoAlt: 'Sogeti logo',
     position: 'PhD & Project Leader - Capgemini',
-    startDate: new Date(2022, 7),
+    startDate: new Date(2022, 6),
     currentlyWorkHere: true,
     summary: [
       'Responsible for internal projects at SogetiLabs.',
