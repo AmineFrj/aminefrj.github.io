@@ -267,45 +267,45 @@ export const PROJECTS: ProjectDetails[] = [
 
 export const TESTIMONIALS: TestimonialDetails[] = [
   {
-    personName: 'WSDM 2024',
+    personName: 'SFC 2024',
     personAvatar: ConfSFC24,
-    title: 'Presentation of article',
+    title: 'International Mathematical Meeting Centre, Marseille, France',
     testimonial:
-      'Presentation of a new clustering algorithm applied on large textual data at International Mathematical Meeting Centre fot the meetings of French Classification Society. ',
+      'Presentation of a new explainable clustering algorithm applied on large textual data at meetings of French Classification Society.',
   },
   {
     personName: 'WSDM 2024',
     personAvatar: ConfWsdm24,
-    title: 'Demonstration',
+    title: 'Mérida, Mexico',
     testimonial:
-      'Presentation and demonstration of CORPEX',
+      'Demonstration and presentation of the article "WordGraph: a python package for reconstructing interactive causal graphical models from text data".',
   },
   {
     personName: 'EGC 2024',
     personAvatar: ConfEgc24,
-    title: 'Talk & demonstration',
+    title: 'Dijon, France',
     testimonial:
-      'Presentation and demonstration of Wordgraph.',
-  },
-  {
-    personName: 'EGC 2023',
-    personAvatar: ConfEgc23,
-    title: 'Talk & demonstration',
-    testimonial:
-      'Presentation and demonstration of CORPEX',
+      'Presentation and demonstration of the article "Modèles graphiques causaux interactifs pour les données textuelles" and the web application WordGraph.',
   },
   {
     personName: 'AI-DSCY 2023',
     personAvatar: ConfAIDSCY,
-    title: 'Talk',
+    title: 'Paris, France',
     testimonial:
-      'Presentation and demonstration of Wordgraph.',
+      'Presentation of our recent work on exploration of causal graphical models applied on textual data using Multivariate Information-based Inductive Causation and co-clustering.',
+  },
+  {
+    personName: 'EGC 2023',
+    personAvatar: ConfEgc23,
+    title: 'Lyon, France',
+    testimonial:
+      'Presentation and demonstration of CORPEX: an exploratory web application of large textual data using robust co-clustering.',
   },
   {
     personName: 'Ipol 2023',
     personAvatar: ConfIpol,
-    title: 'Talk',
+    title: 'Paris, France',
     testimonial:
-      'Presentation and demonstration of the article CAEclust: A Consensus of Autoencoders Representations for Clustering” (2022). In: Paris, France: Image Processing On Line, pp. 590–603.',
+      'Presentation and demonstration of a new deep auto encoder consensus approach for clustering called "CAEclust: A Consensus of Autoencoders Representations for Clustering” (2022). In: Paris, France: Image Processing On Line, pp. 590–603.',
   }
 ];
