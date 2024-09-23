@@ -19,6 +19,7 @@ import LogoSaynova from '/public/images/logos/logo-saynova.png';
 import LogoNumendo from '/public/images/logos/logo-numendo.png';
 import LogoEnovacom from '/public/images/logos/logo-enovacom.png';
 
+import PaperSfc from '/public/images/paper-sfc.png';
 import PaperWG from '/public/images/paper-wg.png';
 import PaperCorpex from '/public/images/paper-corpex.png';
 import PaperWSDM from '/public/images/paper-wsdm.png';
@@ -150,13 +151,15 @@ export const EXPERIENCES: ExperienceDetails[] = [
   {
     logo: LogoSogeti,
     logoAlt: 'Sogeti logo',
-    position: 'PhD student',
+    position: 'Research projects leader - Capgemini',
     startDate: new Date(2022, 7),
     currentlyWorkHere: true,
     summary: [
-      'Project manager for the analysis and mining of unstructured health data from computerized patient records using NLP techniques.',
-      'Company tutor for work-study students and interns on various sogeti labs projects.',
-      'Collection of HR data and development of a model for classifying and recommending profiles to company employees.'
+      'Responsible for internal projects at SogetiLabs.',
+      'Operational management and monitoring of development teams.',
+      'Development of clustering and recommendation models using NLP techniques.',
+      'Definition of requirements and discussions with customers to produce mockups.',
+      'Company tutor for work-study students and interns.'
     ],
   },
   {
@@ -168,7 +171,7 @@ export const EXPERIENCES: ExperienceDetails[] = [
     endDate: new Date(2021, 9),
     summary: [
       'Development of a search and visualization platform for unstructured data in a healthcare data warehouse.',
-      'Collection, pre-processing and classification of n2c2 healthcare data.'
+      'Collecting, preprocessing and classifying Harvard Medical School\'s health data n2c2.'
     ],
   },
   {
@@ -214,9 +217,20 @@ export const EXPERIENCES: ExperienceDetails[] = [
 
 export const PROJECTS: ProjectDetails[] = [
   {
+    name: 'Une variante pondérée de K-means adaptée aux données textuelles',
+    description:
+      'A. Ferdjaoui, S. Affeldt, M. Nadif',
+    url: '',
+    previewImage: PaperSfc,
+    technologies: [
+      'SFC 2024',
+      'Marseille, France',
+    ],
+  },
+  {
     name: 'WordGraph: a python package for reconstructing interactive causal graphical models from text data',
     description:
-      'A Ferdjaoui, S Affeldt, M Nadif',
+      'A. Ferdjaoui, S. Affeldt, M. Nadif',
     url: 'https://dl.acm.org/doi/10.1145/3616855.3635698',
     previewImage: PaperWSDM,
     technologies: [

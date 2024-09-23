@@ -33,7 +33,9 @@ const HeroSection = () => {
               Amine{' '} Ferdjaoui
             </Typography>
             <Typography>
-              PhD student in Data science on : Inference of causal relations by unsupervised learning applied to Natural Language Processing (NLP).
+              PhD student in Data science and project leader at SogetiLabs, Capgemini.
+
+              {/* PhD student in Data science on : Inference of causal relations by unsupervised learning applied to Natural Language Processing (NLP). */}
             </Typography>
           </div>
           <div className="flex flex-col gap-2">

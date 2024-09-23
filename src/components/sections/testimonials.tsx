@@ -1,27 +1,64 @@
+"use client";
+
+import { useRef } from 'react';
 import { TESTIMONIALS } from '@/lib/data';
 import Tag from '@/components/data-display/tag';
 import TestimonialDetails from '@/components/data-display/testimonial-details';
-import Typography from '@/components/general/typography';
 import Container from '@/components/layout/container';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'; // Importation des icônes de flèches
 
 const TestimonialsSection = () => {
+  const scrollRef = useRef(null); // Crée un ref pour le conteneur des témoignages
+
+  // Fonction pour faire défiler vers la gauche
+  const scrollLeft = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({ left: -500, behavior: 'smooth' });
+    }
+  };
+
+  // Fonction pour faire défiler vers la droite
+  const scrollRight = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({ left: 500, behavior: 'smooth' });
+    }
+  };
+
   return (
-    <Container id="testimonials" className="bg-gray-50">
-      <div className="flex flex-col items-center gap-4">
+    <Container id="testimonials" className="bg-gray-50 py-12 relative">
+      <div className="flex flex-col items-center gap-4 mb-8">
         <div className="self-center">
           <Tag label="Talks" />
         </div>
-        {/* <Typography variant="subtitle" className="max-w-xl text-center">
-          Nice things people have said about me:
-        </Typography> */}
       </div>
 
+      {/* Flèche gauche */}
+      <button
+        onClick={scrollLeft}
+        className="absolute left-10 top-1/2 transform -translate-y-1/2 bg-gray-300 p-2 rounded-full shadow-lg"
+        aria-label="Scroll Left"
+      >
+        <FaArrowLeft />
+      </button>
 
-      <div className="flex gap-8 max-md:flex-col md:max-lg:flex-wrap">  
+      {/* Conteneur défilant des témoignages */}
+      <div
+        ref={scrollRef}
+        className="flex overflow-x-auto space-x-4 py-8 scrollbar-hide"
+      >
         {TESTIMONIALS?.map((testimonial, index) => (
           <TestimonialDetails key={index} {...testimonial} />
         ))}
       </div>
+
+      {/* Flèche droite */}
+      <button
+        onClick={scrollRight}
+        className="absolute right-10 top-1/2 transform -translate-y-1/2 bg-gray-300 p-2 rounded-full shadow-lg"
+        aria-label="Scroll Right"
+      >
+        <FaArrowRight />
+      </button>
     </Container>
   );
 };
