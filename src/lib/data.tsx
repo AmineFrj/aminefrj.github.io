@@ -267,42 +267,42 @@ export const PROJECTS: ProjectDetails[] = [
 
 export const TESTIMONIALS: TestimonialDetails[] = [
   {
-    personName: 'SFC 2024',
+    personName: 'Meeting of the French-Speaking Classification Society 2024',
     personAvatar: ConfSFC24,
     title: 'International Mathematical Meeting Centre, Marseille, France',
     testimonial:
       'Presentation of a new explainable clustering algorithm applied on large textual data at meetings of French Classification Society.',
   },
   {
-    personName: 'WSDM 2024',
+    personName: 'ACM International Conference on Web Search and Data Mining 2024',
     personAvatar: ConfWsdm24,
     title: 'Mérida, Mexico',
     testimonial:
       'Demonstration and presentation of the article "WordGraph: a python package for reconstructing interactive causal graphical models from text data".',
   },
   {
-    personName: 'EGC 2024',
+    personName: 'French-speaking Conference on Knowledge Extraction and Management 2024',
     personAvatar: ConfEgc24,
     title: 'Dijon, France',
     testimonial:
       'Presentation and demonstration of the article "Modèles graphiques causaux interactifs pour les données textuelles" and the web application WordGraph.',
   },
   {
-    personName: 'AI-DSCY 2023',
+    personName: 'AI-DSCY: Machine Learning Wordkshop 2023',
     personAvatar: ConfAIDSCY,
     title: 'Paris, France',
     testimonial:
       'Presentation of our recent work on exploration of causal graphical models applied on textual data using Multivariate Information-based Inductive Causation and co-clustering.',
   },
   {
-    personName: 'EGC 2023',
+    personName: 'French-speaking Conference on Knowledge Extraction and Management 2023',
     personAvatar: ConfEgc23,
     title: 'Lyon, France',
     testimonial:
       'Presentation and demonstration of CORPEX: an exploratory web application of large textual data using robust co-clustering.',
   },
   {
-    personName: 'Ipol 2023',
+    personName: 'IPOL Journal: Image Processing On Line 2023',
     personAvatar: ConfIpol,
     title: 'Paris, France',
     testimonial:
