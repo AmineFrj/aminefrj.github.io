@@ -23,6 +23,7 @@ import PaperSfc from '/public/images/paper-sfc.png';
 import PaperWG from '/public/images/paper-wg.png';
 import PaperCorpex from '/public/images/paper-corpex.png';
 import PaperWSDM from '/public/images/paper-wsdm.png';
+import PaperWSDM2 from '/public/images/paper-wsdm-2.png';
 
 import ConfEgc23 from '/public/images/conf-egc23.png';
 import ConfEgc24 from '/public/images/conf-egc24.png';
@@ -217,6 +218,17 @@ export const EXPERIENCES: ExperienceDetails[] = [
 ];
 
 export const PROJECTS: ProjectDetails[] = [
+  {
+    name: 'Cluster Insight: A Weighted Clustering Tool for Large Textual Data Exploration',
+    description:
+      'A. Ferdjaoui, S. Affeldt, M. Nadif',
+    url: 'https://www.youtube.com/watch?v=wFH78UHa_Ps',
+    previewImage: PaperWSDM2,
+    technologies: [
+      'WSDM 2025',
+      'Hanover, Germany',
+    ],
+  },
   {
     name: 'Une variante pondérée de K-means adaptée aux données textuelles',
     description:
