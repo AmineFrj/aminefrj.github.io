@@ -29,7 +29,8 @@ import ConfEgc23 from '/public/images/conf-egc23.png';
 import ConfEgc24 from '/public/images/conf-egc24.png';
 import ConfIpol from '/public/images/conf-ipol.png';
 import ConfAIDSCY from '/public/images/conf-aidscy.png';
-import ConfWsdm24 from '/public/images/conf-wsdm.png';
+import ConfWsdm24 from '/public/images/conf-wsdm-24.png';
+import ConfWsdm25 from '/public/images/conf-wsdm-25.png';
 import ConfSFC24 from '/public/images/conf-sfc.png';
 
 
@@ -278,6 +279,13 @@ export const PROJECTS: ProjectDetails[] = [
 ];
 
 export const TESTIMONIALS: TestimonialDetails[] = [
+  {
+    personName: 'ACM International Conference on Web Search and Data Mining 2025',
+    personAvatar: ConfWsdm25,
+    title: 'Hannover, Germany',
+    testimonial:
+      'Demonstration and presentation of the article "Cluster Insight: A Weighted Clustering Tool for Large Textual Data Exploration".',
+  },
   {
     personName: 'Meeting of the French-Speaking Classification Society 2024',
     personAvatar: ConfSFC24,
